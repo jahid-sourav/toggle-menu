@@ -4,13 +4,13 @@
 <head>
   <!-- Required Meta Tags Starts Here-->
   <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="">
-  <meta property="og:url" content="">
-  <meta property="og:title" content="">
+  <meta name="description" content="It's Toggle Menu. HTML, CSS & JS">
+  <meta name="keywords" content="Toggle Menu">
+  <meta name="author" content="Jahid">
+  <meta property="og:url" content="https://github.com/jahid-sourav">
+  <meta property="og:title" content="A Responsive Toggle Menu">
   <meta property="og:description" content="">
-  <meta property="og:image" content="assets/images/">
+  <meta property="og:image" content="assets/images/thumb.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Required Meta Tags Ends Here-->
 
@@ -45,19 +45,59 @@
 <body>
   <!-- Header Starts Here -->
   <header>
+    <div class="container">
+      <div class="navbar">
+        <!-- Logo Starts Here -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="logo">
+          </a>
+        </div>
+        <!-- Logo Ends Here -->
 
+        <!-- Overlay Area Starts Here -->
+        <div id="mainNav" class="overlay">
+          <!-- Close Icon Starts Here -->
+          <svg onclick="closeNav()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-x close-icon">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+          <!-- Close Icon Ends Here -->
+          <!-- Overlay Content Starts Here -->
+          <div class="overlay-content">
+            <a href="index.html" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+          </div>
+          <!-- Overlay Content Ends Here -->
+        </div>
+        <!-- Overlay Area Ends Here -->
+
+        <!-- Menu Icon Starts Here -->
+        <svg onclick="openNav()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-menu menu-icon">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <!-- Menu Icon Ends Here -->
+      </div>
+    </div>
   </header>
   <!-- Header Ends Here -->
 
-  <!-- Section Starts Here -->
-  
-  <!-- Section Ends Here -->
-
-  <!-- Footer Starts Here -->
-  <footer>
-
-  </footer>
-  <!-- Footer Ends Here -->
+  <!-- Banner Starts Here -->
+  <section class="banner-area">
+    <div class="d-flex align-items-center justify-content-center">
+      <h1>Toggle Menu</h1>
+    </div>
+  </section>
+  <!-- Banner Ends Here -->
 
   <!-- Script Link Starts Here -->
   <!-- jQuery Link Starts Here -->
